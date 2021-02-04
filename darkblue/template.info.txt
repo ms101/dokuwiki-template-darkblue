@@ -1,7 +1,7 @@
-base     dokufreech2
-author   freech
-email    
-date     2020-04-15
-name     Dokufreech 2
-desc     Based on DokuWiki's default template, dark with blue aspects
-url      http:/todo.todo
+base     darkblue
+author   halbbit
+email    supp3@gmx.net
+date     2021-02-04
+name     Darkblue
+desc     Based on DokuWiki's default template, dark with blue nuances
+url      https://github.com/ms101/dokuwiki-template-darkblue
