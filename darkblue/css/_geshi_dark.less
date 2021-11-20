@@ -1,0 +1,120 @@
+/**
+ * This file provides styles for syntax highlighting in dark mode
+ * Syntax highlighting is done by GeShi
+ * It doesn't change the default style light theme style
+ *
+ * This file has been created by MrReSc for the MindTheDark Dokuwiki template.
+ * MrReSc: https://github.com/MrReSc
+ * Source of the Project: https://github.com/MrReSc/MindTheDark
+ * Source of this File: https://github.com/MrReSc/MindTheDark/blob/b410b4f788ca07eecd02cd957b23cb7b5e8df5b4/css/_geshi_dark.less
+ *
+ * The file has be copied and edited by:
+ * Ralf Stemmer <ralf.stemmer@gmx.net> to fit it into the darkblue template by ms101
+ * on 20. Sept. 2021.
+ * rstemmer (Ralf Stemmer): https://github.com/rstemmer
+ * ms101: https://github.com/ms101
+ * Source of the Project: https://github.com/ms101/dokuwiki-template-darkblue
+ *
+ * Changes:
+ *  - Apply darkModeGeshi in any case (No non-dark mode to consider)
+ */
+
+@brackets: #bfbfbf;
+@comments: #7a7a75;
+@strings: #ff4444;
+@methods: #ffffff;
+@methods2: #ffcc66;
+@keyword1: #99ee00;
+@keyword2: #eeaa22;
+@keyword3: #dd88ff;
+@keyword4: #ff7744;
+@operators: #44ffbb;
+@numbers: #ff2288;
+@variables: #88c0ff;
+@variables2: #ccddff;
+@variables5: #ddddff;
+@lines: #252525;
+@lines2: #272727;
+@lines3: var(--background_site);
+@lines-xtra: #494d26;
+
+.darkModeGeshi{
+
+    /* lines		*/
+	.li1 {
+		background: @lines;
+	}
+	.li2 {
+		background: @lines2;
+    }
+	.li1 .de1 {
+		background: @lines3;
+	}
+	.li1.ln-xtra .de1, .ln-xtra{
+		background: @lines-xtra;
+	}
+	
+    /* brackets		*/
+	.br0 {
+		color: @brackets;
+    }
+    /* comments		*/
+	.co0, .co1, .coMULTI {
+		color: @comments;
+    }
+
+    /* strings		*/
+	.st0, .st_h {
+		color: @strings;
+	}
+
+    /* methods		*/
+	.me0, .me1 {
+		color: @methods;
+	}
+	.me2 {
+		color: @methods2;
+    }
+    
+    /* keywords		*/
+	.kw1 {
+		color: @keyword1;
+	}
+	.kw2 {
+		color: @keyword2;
+	}
+	.kw3 {
+		color: @keyword3;
+	}
+	.kw4 {
+		color: @keyword4;
+    }
+    
+    /* operators		*/
+	.sy0 {
+		color: @operators;
+    }
+    
+    /* numbers		*/
+	.nu0 {
+		color: @numbers;
+    }
+    
+    /* variables		*/
+	.re0, .re1, .re3, .re4 {
+		color: @variables;
+	}
+	.re2 {
+		color: @variables2;
+	}
+	.re5 {
+		color: @variables5;
+	}
+
+
+}
+
+&:root {
+	.darkModeGeshi();
+}
+
